@@ -1,0 +1,13 @@
+﻿Class "interactions":
+
+Phong's reflection:
+	public static Vector3 reflect(Vector3 L, Vector3 N)
+	        {
+	            //return I - N * 2f * (I * N);
+	            return 2f * N * (N * L) - L;
+	        }
+	taken from https://www.scratchapixel.com/lessons/3d-basic-rendering/phong-shader-BRDF
+
+Class "geometry":
+
+Material struture. ALbedo: https://images.slideplayer.com/26/8860002/slides/slide_2.jpg
